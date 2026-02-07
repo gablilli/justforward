@@ -1,0 +1,12 @@
+services:
+  pop3-bridge:
+    build: .
+    container_name: pop3-bridge
+    environment:
+      PROVIDERHOST: "host.com"
+      PROVIDER_PORT: "995"
+      PROVIDER_USER: "user@example.org"
+      PROVIDER_PASS: "password"
+      GMAIL_USER: "user@gmail.com"
+      APP_PASSWORD: "APP_PASSWORD_GMAIL"
+    restart: always
